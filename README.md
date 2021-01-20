@@ -16,7 +16,7 @@ Check out the App here!:
  
 
 ## Description
-The user is able to et on the site and google search for any book title and add it to a "Saved" list with the "Save: button. 
+The user is able to get on the site and google search for any book title and add it to a "Saved" list with the "Save" button. 
 
 
 ## Deployment
