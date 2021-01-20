@@ -1,6 +1,3 @@
-
-
-This is a react app to help user look up books and save their searched books. 
 # ~ Google Books ~ App 
 Check out the App here!:
 ## Table of Contents
