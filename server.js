@@ -2,11 +2,21 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+const helmet = require("helmet");
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+const cors = require("cors");
+const path = require("path");
+const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 3001;
 
+app.use(helmet());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(cors());
+app.use(morgan("dev"));
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 
 mongoose.connect(
